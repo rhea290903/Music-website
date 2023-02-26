@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-image:"/Users/rhea/Downloads/Spotify Clone/Screenshot 2022-11-16 at 8.35.28 AM.png" ;
+    background-color: #acd4ee;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: #acd4ee;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+/*nav ul li i{
+    align-content:right;
+}*/
+
+.dropbtn img{
+    width: 44px;
+    padding: 0 8px;
+}
+.dropbtn {
+    background-color: #000000;
+    align-content: center;
+    color: white;
+    padding: 5px;
+    font-size: 5px;
+    border: none;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b684d0;
+    min-width: 200px;
+    min-height: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #0d9eae;}
+
+
+.db img{
+    width: 44px;
+    padding: 0 8px;
+}
+.db {
+    background-color: #000000;
+    align-content: center;
+    color: white;
+    padding: 5px;
+    font-size: 5px;
+    border: none;
+}
+  
+.dd {
+    position: relative;
+    display: inline-block;
+}
+.dd-content {
+    display: none;
+    position: absolute;
+    background-color: #b684d0;
+    min-width: 120px;
+    min-height: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dd-content a {
+    color: black;
+    padding: 12px 16px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+}
+.dd-content a:hover {background-color: #ddd;}
+.dd:hover .dd-content {display: block;}
+.dd:hover .db {background-color: #0d9eae;}
+
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 90px;
+   padding: 34px;
+   background-image: url('music1.png');
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: #acd4ee;
+    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: beige;
+    }
+  }
